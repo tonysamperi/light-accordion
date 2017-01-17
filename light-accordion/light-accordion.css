@@ -1,0 +1,107 @@
+div.light-accordion {
+  display: block;
+  clear: both;
+  width: 100%;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+div.light-accordion:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+div.light-accordion.margin-top {
+  margin-top: 10px;
+}
+div.light-accordion.margin-default {
+  margin: 10px auto;
+}
+div.light-accordion > div {
+  clear: both;
+  width: 100%;
+}
+div.light-accordion > div.light-accordion-header {
+  background: #8FD6E7;
+  clear: both;
+}
+div.light-accordion > div.light-accordion-header > div.light-accordion-title {
+  clear: both;
+  display: block;
+  width: 100%;
+  padding: 5px 10px;
+  color: #FFF;
+  cursor: pointer;
+  position: relative;
+}
+div.light-accordion > div.light-accordion-header > div.light-accordion-title > div.light-accordion-icon {
+  float: right;
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 20px;
+  overflow: hidden;
+}
+div.light-accordion > div.light-accordion-header > div.light-accordion-title > div.light-accordion-icon:before {
+  padding: 0px;
+  position: absolute;
+  content: " ";
+  right: 2px;
+  top: 50%;
+  margin: -6px 0 0 0;
+  z-index: 3;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #8fd6e7;
+}
+div.light-accordion > div.light-accordion-header > div.light-accordion-title > div.light-accordion-icon:after {
+  padding: 0px;
+  position: absolute;
+  content: " ";
+  right: 0;
+  top: 50%;
+  margin: -5px 0 0 0;
+  z-index: 2;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #FFF;
+}
+div.light-accordion > div.light-accordion-collapsible {
+  background: #D8EFF5;
+  padding: 0 5px;
+  max-height: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+}
+div.light-accordion.opened > div.light-accordion-collapsible {
+  max-height: 5000px;
+  min-height: 10px;
+  transition: max-height 2s linear;
+}
+div.light-accordion.opened > div.light-accordion-header > div.light-accordion-title > div.light-accordion-icon:before {
+  margin: -5px 0 0 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #8fd6e7;
+  border-top: transparent;
+}
+div.light-accordion.opened > div.light-accordion-header > div.light-accordion-title > div.light-accordion-icon:after {
+  margin: -7px 0 0 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #FFF;
+  border-top: transparent;
+}
+div.light-accordion div.light-accordion-content {
+  padding: 5px 5px;
+}
+
+/* TEST PURPOSE - START */
+div.light-accordion > div.light-accordion-header:focus,
+div.light-accordion > div.light-accordion-header > div.light-accordion-title:focus{
+  border: 1px solid red;
+}
+/* TEST PURPOSE - END */
