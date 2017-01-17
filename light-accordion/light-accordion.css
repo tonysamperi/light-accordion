@@ -45,13 +45,13 @@ div.light-accordion > div.light-accordion-header > div.light-accordion-title > d
   padding: 0px;
   position: absolute;
   content: " ";
-  right: 2px;
+  right: 0px;
   top: 50%;
-  margin: -6px 0 0 0;
+  margin: -8px 0 0 0;
   z-index: 3;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 8px solid #8fd6e7;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #8fd6e7;
 }
 div.light-accordion > div.light-accordion-header > div.light-accordion-title > div.light-accordion-icon:after {
   padding: 0px;
@@ -82,10 +82,10 @@ div.light-accordion.opened > div.light-accordion-collapsible {
   transition: max-height 2s linear;
 }
 div.light-accordion.opened > div.light-accordion-header > div.light-accordion-title > div.light-accordion-icon:before {
-  margin: -5px 0 0 0;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-bottom: 8px solid #8fd6e7;
+  margin: -4px 0 0 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #8fd6e7;
   border-top: transparent;
 }
 div.light-accordion.opened > div.light-accordion-header > div.light-accordion-title > div.light-accordion-icon:after {
